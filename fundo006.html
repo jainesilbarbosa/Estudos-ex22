@@ -6,18 +6,24 @@
     <title>Teste de imagem de fundo</title>
     <style>
         body {
-            height: 100vh;
+            /* height: 100vh;
             background-color: black;
             background-image: url(imagem/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; */
+
+            /* shorthand - backgground color > image > position > reapt > [size] > attachement 
+            */
+
+            background: black url(imagem/wallpaper002.jpg) center center no-repeat fixed;
     
         }
 
         main {
             background-color: azure;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
